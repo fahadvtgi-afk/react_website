@@ -104,7 +104,7 @@ export default function ClientsSection() {
               key={index}
               style={{
                 height: "120px",
-                display: "flex",
+                display: "flex", 
                 alignItems: "center",
                 justifyContent: "center",
                 background: "rgba(255,255,255,0.05)",

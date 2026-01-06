@@ -75,7 +75,7 @@ export default function Footer() {
           }}
         >
           {[
-            { icon: <FiInstagram />, url: "https://www.instagram.com/liveeventksa" },
+            { icon: <FiInstagram />, url: "https://www.instagram.com/vlive_vision" },
             { icon: <FiFacebook />, url: "https://www.facebook.com/your_facebook_page" },
             { icon: <FiTwitter />, url: "https://twitter.com/your_twitter_handle" },
           ].map((item, idx) => (
@@ -98,18 +98,32 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Footer Text */}
-      <p
-        style={{
-          fontSize: "0.95rem",
-          opacity: 0.8,
-          textAlign: "center",
-          marginTop: "30px",
-        }}
-      >
-        © 2026 VLive Vision. All rights reserved.
-      </p>
+      {/* Footer Bottom Text */}
+      <div style={{ textAlign: "center", marginTop: "30px" }}>
+        <p style={{ fontSize: "0.95rem", opacity: 0.8 }}>
+          © 2026 VLive Vision. All rights reserved.
+        </p>
 
+        <p
+  style={{
+    fontSize: "0.9rem",
+    opacity: 0.75,
+    marginTop: "8px",
+  }}
+>
+  Designed by{" "}
+  <a
+    href="https://wizzoit.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="wizzo-link"
+  >
+    Wizzo Software Pvt. Ltd.
+  </a>
+</p>
+
+      </div>
+        
       {/* Hover Effects */}
       <style>
         {`
@@ -118,6 +132,18 @@ export default function Footer() {
             color: #ff00ff;
             transform: scale(1.3);
           }
+            .wizzo-link {
+  color: #00ffff; /* highlight color */
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.wizzo-link:hover {
+  color: #ff4dff; /* hover highlight */
+  text-shadow: 0 0 6px rgba(255, 77, 255, 0.6);
+}
+
 
           /* Responsive Adjustments */
           @media (max-width: 900px) {

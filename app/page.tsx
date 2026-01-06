@@ -1,4 +1,5 @@
 'use client';
+import { useEffect } from "react";
 
 import GridScan from "../components/GridScan";
 import Navbar from "../components/Navbar";
@@ -9,6 +10,15 @@ import ClientsSection from "../components/ClientsSection";
 import ContactSection from "../components/ContactSection";
 
 export default function Home() {
+  useEffect(() => {
+  const hash = window.location.hash.replace("#", "");
+  if (hash) {
+    const el = document.getElementById(hash);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 50);
+    }
+  }
+}, []);
   return (
     <div style={{ width: "100%" }}>
       {/* Navbar */}

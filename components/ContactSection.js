@@ -66,17 +66,17 @@ export default function ContactSection() {
 
       {/* Centered container for map and cards */}
       <div style={{ position: "relative", zIndex: 10, maxWidth: "1000px", margin: "0 auto" }}>
-        {/* Google Map (slightly smaller) */}
+        {/* Google Map  */}
         <div style={{ marginBottom: "3rem", borderRadius: "12px", overflow: "hidden" }}>
           <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456!2d-73.987654!3d40.732100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259abcdef1234%3A0x123456789abcdef!2sYour%20Business%20Name!5e0!3m2!1sen!2sus!4v1700000000000"
-  width="100%"       // <-- slightly smaller than 100% for a bit of margin on sides
-  height="400"      // <-- slightly smaller height
-  style={{ border: 0, borderRadius: "12px", display: "block", margin: "0 auto" }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456!2d-73.987654!3d40.732100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259abcdef1234%3A0x123456789abcdef!2sYour%20Business%20Name!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%"      
+            height="400"     
+            style={{ border: 0, borderRadius: "12px", display: "block", margin: "0 auto" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            />
 
         </div>
 
