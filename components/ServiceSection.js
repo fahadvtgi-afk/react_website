@@ -8,23 +8,22 @@ const Particles = dynamic(() => import('./Particles'), { ssr: false });
 
 export default function ServiceSection() {
   const services = [
-    { title: "PA Sound System", desc: "Indoor and Outdoor,Line ARRAY Speakers,Audio,Recording,Digital Live Desk" },
-    { title: "Video Shoot & Editing", desc: "Live Mixing,Duch Crane,Steady Cam,Helicam Shoot,Still Photography,Product Photography" },
-    { title: "Pro Lightings", desc: "Moving Heades,LED Par Cans,Laser&Spotlights,Smoke Machine,Flame&FireWorks,etc." },
-    { title: "Wedding Plans", desc: "Stages,Decorations,Catering,Photography,Music,Entertainment,etc." },
-    { title: "LED Screen Projection", desc: "LED Wall P2,P3,P4,P5,Front Screen,Rear Screen,Projectors." },
-    { title: "Stage Works", desc: "Stages and decorations for any type of event with chairs,carpets,etc." },
-    { title: "Audio Studio", desc: "Vlive Events Studio in jeddah provides Orchestra and Singers for music events." },
-    { title: "Desert Safari", desc: "Vlive Events also offer Desert Safari Package.Experience the Safari With Us." },
-    { title: "Ship Voyage", desc: "We also offer a different experience in ship with entertainment shows." },
+    { title: "Audio", desc: "Indoor and Outdoor,Line array speakers,audio recording,digital sound desk & Backlines" },
+    { title: "Production & Branding", desc: "We bring ideas to life through high-quality production and strategic branding.From concept to final delivery." },
+    { title: "Projection Mapping", desc: "Transforming surfaces into immersive visual experiences." },
+    { title: "Pro Lighting", desc: "Moving Heads,LED Par Cans,Laser & Spotlights,SFX etc." },
+    { title: "Rigging & Automation", desc: "Stages,Aluminium Mega Truss,Chain Hoist etc." },
+    { title: "LED Screen", desc: "Variety of led screen P1.9, P2.5, P2.9, P3.9, P4.9." },
+    // { title: "Audio Studio", desc: "Vlive Events Studio in jeddah provides Orchestra and Singers for music events." },
+    // { title: "Desert Safari", desc: "Vlive Events also offer Desert Safari Package.Experience the Safari With Us." },
+    // { title: "Ship Voyage", desc: "We also offer a different experience in ship with entertainment shows." },
   ];
 
   const additionalServices = [
-    "Creative design", "Brand development", "POS , POP displays", "Direct printing",
-    "Offset printing", "Screen printing", "Engraving", "Indoor printing",
-    "Outdoor printing", "Acrylic displays", "Cosmetic stands", "Broucher holders",
-    "Promotion stands", "Window displays", "Currugated displays", "Instore displays",
-    "Mall kiosks", "Visual merchandising",
+    "Creative designs", "Interactive Floor", "Furniture Rental", "Event Licensing Services", "Mall Kiosks",
+    "Generator Services", "Wedding Plans", "Backlines", "Interactive Screen",
+    "TV Rentals", "Video Production & Photography", "remote meeting (Zoom & Teams)", "Ceremonial decor",
+    
   ];
 
   return (
@@ -137,6 +136,27 @@ export default function ServiceSection() {
             </SpotlightCard>
           ))}
         </div>
+
+          {/* Other Services Heading */}
+<div
+  style={{
+    textAlign: "center",
+    marginBottom: "2rem",
+  }}
+>
+  <h3
+    style={{
+      fontSize: "1.6rem",
+      fontWeight: 600,
+      letterSpacing: "0.5px",
+      background: "linear-gradient(90deg, #8a2be2, #00ffff)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+    }}
+  >
+    Other Services
+  </h3>
+</div>
 
         {/* Additional Services Points */}
         <div

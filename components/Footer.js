@@ -105,22 +105,22 @@ export default function Footer() {
         </p>
 
         <p
-  style={{
-    fontSize: "0.9rem",
-    opacity: 0.75,
-    marginTop: "8px",
-  }}
->
-  Designed by{" "}
-  <a
-    href="https://wizzoit.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="wizzo-link"
-  >
-    Wizzo Software Pvt. Ltd.
-  </a>
-</p>
+            style={{
+              fontSize: "0.9rem",
+              opacity: 0.75,
+              marginTop: "8px",
+            }}
+          >
+            Designed by{" "}
+            <a
+              href="https://wizzoit.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="wizzo-link"
+            >
+              Wizzo Software Pvt. Ltd.
+            </a>
+          </p>
 
       </div>
         
@@ -133,16 +133,16 @@ export default function Footer() {
             transform: scale(1.3);
           }
             .wizzo-link {
-  color: #00ffff; /* highlight color */
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+            color: #00ffff; /* highlight color */
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+          }
 
-.wizzo-link:hover {
-  color: #ff4dff; /* hover highlight */
-  text-shadow: 0 0 6px rgba(255, 77, 255, 0.6);
-}
+          .wizzo-link:hover {
+            color: #ff4dff; /* hover highlight */
+            text-shadow: 0 0 6px rgba(255, 77, 255, 0.6);
+          }
 
 
           /* Responsive Adjustments */

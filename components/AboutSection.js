@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import MagicBento from "./MagicBento";
+//import MagicBento from "./MagicBento";
 
 // Dynamically import Particles to avoid SSR issues
 const Particles = dynamic(() => import("./Particles"), { ssr: false });
@@ -55,7 +55,7 @@ export default function AboutSection() {
             animation: "floatHeading 3s ease-in-out infinite",
           }}
         >
-          About Us
+          Who We Are
         </h2>
 
         <div
@@ -74,40 +74,81 @@ export default function AboutSection() {
             opacity: 0.85,
           }}
         >
-          Discover who we are and what makes us different
+          We Love What We Do
         </p>
       </div>
 
       {/* MagicBento overlay (centered and responsive) */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 5,
-          marginTop: "4rem",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "1400px",
-            margin: "0 auto",
-          }}
-        >
-          <MagicBento
-            textAutoHide={true}
-            enableStars={true}
-            enableSpotlight={true}
-            enableBorderGlow={true}
-            enableTilt={true}
-            enableMagnetism={true}
-            clickEffect={true}
-            spotlightRadius={300}
-            particleCount={12}
-            glowColor="132, 0, 255"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-      </div>
+     {/* Magic Bento Style Single Card */}
+{/* Glow Focus Centered Text */}
+<div
+  style={{
+    position: "relative",
+    zIndex: 5,
+    marginTop: "4rem",
+    textAlign: "center",
+    padding: "3rem 20px",
+  }}
+>
+  {/* soft glow behind text */}
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      background:
+        "radial-gradient(circle at center, rgba(138,43,226,0.25), transparent 65%)",
+      filter: "blur(40px)",
+      zIndex: 0,
+    }}
+  />
+
+  <p
+    style={{
+      position: "relative",
+      zIndex: 2,
+      maxWidth: "900px",
+      margin: "0 auto",
+      fontSize: "1.4rem",
+      lineHeight: "2.2",
+      color: "#ffffff",
+      opacity: 0.95,
+    }}
+  >
+    We are an experienced{" "}
+    <span
+      style={{
+        background: "linear-gradient(90deg, #8a2be2, #00ffff)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        fontWeight: 600,
+      }}
+    >
+      team of event management specialists
+    </span>{" "}
+    who know how to plan, promote, and run an event that will achieve your goal.
+    <br /><br />
+    From{" "}
+    <span
+      style={{
+        background: "linear-gradient(90deg, #8a2be2, #00ffff)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        fontWeight: 600,
+      }}
+    >
+      event production to social impact
+    </span>
+    , fundraising technology services to customer service — we’ve got you
+    covered.
+    <br /><br />
+    With operations in{" "}
+    <strong>KSA</strong> and <strong>Kerala</strong>, and accomplished team
+    members, we scale quickly to match diverse client needs and budgets.
+    <br /><br />
+    We execute all projects with precision and purpose.
+  </p>
+</div>
+
 
       {/* Keyframes for fadeUp and float animation */}
       <style>

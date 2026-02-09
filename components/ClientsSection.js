@@ -7,6 +7,23 @@ const Particles = dynamic(() => import("./Particles"), { ssr: false });
 
 export default function ClientsSection() {
   const clients = [
+    "/assets/clients-pic/client-h.webp",
+    "/assets/clients-pic/client-i-dup.webp",
+    "/assets/clients-pic/client-j-dup.webp",
+    "/assets/clients-pic/client-k-dup.webp",
+    "/assets/clients-pic/client-l.webp",
+    "/assets/clients-pic/client-m.webp",
+    "/assets/clients-pic/client-n-dup-1.webp",
+    "/assets/clients-pic/client-o.webp",
+    "/assets/clients-pic/client-p.webp",
+    "/assets/clients-pic/client-q.webp",
+    "/assets/clients-pic/client-r.webp",
+    "/assets/clients-pic/client-s-dup.webp",
+    "/assets/clients-pic/client-t-dup.webp",
+    "/assets/clients-pic/client-u.webp",
+     "/assets/clients-pic/client-v.webp",
+    "/assets/clients-pic/client-w.webp",  
+    "/assets/clients-pic/client-x.webp",
     "/assets/clients-pic/client1.webp",
     "/assets/clients-pic/client2.webp",
     "/assets/clients-pic/client3.webp",

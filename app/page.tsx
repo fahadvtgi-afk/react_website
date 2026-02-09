@@ -59,7 +59,7 @@ export default function Home() {
           }}
         >
           <h1 className="hero-heading">
-            POWERFUL EVENTS <br />POWERED BY VLIVE VISION.
+            Its not about ideas, <br />its about making ideas happen.
           </h1>
         </div>
 

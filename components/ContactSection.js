@@ -69,7 +69,7 @@ export default function ContactSection() {
         {/* Google Map  */}
         <div style={{ marginBottom: "3rem", borderRadius: "12px", overflow: "hidden" }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.123456!2d-73.987654!3d40.732100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259abcdef1234%3A0x123456789abcdef!2sYour%20Business%20Name!5e0!3m2!1sen!2sus!4v1700000000000"
+            src="https://www.google.com/maps?q=21.5688934,39.1757965&hl=en&z=17&output=embed"
             width="100%"      
             height="400"     
             style={{ border: 0, borderRadius: "12px", display: "block", margin: "0 auto" }}
@@ -91,14 +91,14 @@ export default function ContactSection() {
           }}
         >
           {[
-            { icon: <FiMapPin size={36} />, title: "Address", detail: "Al Baghdadiyah, Jeddah, KSA" },
-            { icon: <FiPhone size={36} />, title: "Call Us", detail: "+966 0126 423 153" },
+            { icon: <FiMapPin size={36} />, title: "Address", detail: "Abdulaziz, Al Faisaliya 3064, Building: 7463, PO-23442" },
+            { icon: <FiPhone size={36} />, title: "Call Us", detail: "+966 53 098 6381" },
             {
               icon: <FiMail size={36} />,
               title: "Email Us",
               detail: (
-                <a href="mailto:info@liveeventksa.com" style={{ color: "#00ffff", textDecoration: "none" }}>
-                  info@liveeventksa.com
+                <a href="mailto:info@vlivevision.com" style={{ color: "#00ffff", textDecoration: "none" }}>
+                  info@vlivevision.com
                 </a>
               ),
             },
